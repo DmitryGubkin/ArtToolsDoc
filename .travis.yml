@@ -1,21 +1,10 @@
 language: node_js
 node_js:
-    - "14"
-env:
-    - CXX=g++-4.8
-addons:
-    apt:
-        sources:
-            - ubuntu-toolchain-r-test
-        packages:
-            - g++-4.8
+    - "lts/*"
 install:
-    - yarn install -g vuepress
+    - yarn install
 script:
-    - yarn run docs:build
-cache:
-    directories:
-        - "node_modules"
+    - yarn docs:build
 notifications:
     email: false
 deploy:
@@ -25,6 +14,5 @@ deploy:
     github-token: $ArtToolsDoc_TOKEN  # Set in the settings page of your repository, as a secure variable
     repo: <DmitryGubkin>/<ArtToolsDoc>
     keep-history: true
-    target-branch: master
     on:
         branch: master
