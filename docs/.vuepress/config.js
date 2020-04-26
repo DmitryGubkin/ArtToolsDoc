@@ -1,4 +1,4 @@
 module.exports = {
-    base: '/ArtToolsDoc/', 
+    base: "/ArtToolsDoc/", 
 
 };
