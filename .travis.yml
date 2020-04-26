@@ -12,7 +12,5 @@ deploy:
     skip-cleanup: true
     local_dir: docs/.vuepress/dist
     github-token: $ArtToolsDoc_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: <DmitryGubkin>/<ArtToolsDoc>
-    keep-history: true
     on:
         branch: master
