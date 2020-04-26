@@ -9,7 +9,7 @@ notifications:
     email: false
 deploy:
     provider: pages
-    skip_cleanup: true
+    cleanup: false
     local_dir: docs/.vuepress/dist
     github-token: $ArtToolsDoc_TOKEN
     keep_history: true
