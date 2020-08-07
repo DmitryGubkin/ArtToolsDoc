@@ -4,7 +4,7 @@ node_js:
 install:
     - yarn install # npm ci
 script:
-    - yarn docs:build # npm run docs:build
+    - yarn run docs:build # npm run docs:build
 notifications:
     email: false
 deploy:
